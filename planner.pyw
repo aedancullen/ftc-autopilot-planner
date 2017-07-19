@@ -21,13 +21,13 @@ class PlannerTool(QtGui.QMainWindow, Ui_plannerTool):
 		axis.translate(0,0,0.1)
 		self.pathGraphics.addItem(axis)
 
-		field = mesh.Mesh.from_file('field.stl')
-		data = field.points
-		data = data.reshape(-1, 3, 3)
-		md = opengl.MeshData(vertexes = data)
+		#field = mesh.Mesh.from_file('field.stl')
+		#data = field.points
+		#data = data.reshape(-1, 3, 3)
+		#md = opengl.MeshData(vertexes = data)
 
-		fieldModel = opengl.GLMeshItem(meshdata = md, shader='shaded')
-		self.pathGraphics.addItem(fieldModel)
+		#fieldModel = opengl.GLMeshItem(meshdata = md, shader='shaded', glOptions='opaque')
+		#self.pathGraphics.addItem(fieldModel)
 
 
 
