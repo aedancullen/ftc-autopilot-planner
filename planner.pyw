@@ -7,6 +7,9 @@ from PyQt4 import QtGui, QtCore
 from pyqtgraph import opengl
 from plannerUi import Ui_plannerTool
 
+import numpy
+from stl import mesh
+
 class PlannerTool(QtGui.QMainWindow, Ui_plannerTool):
 	def __init__(self):
 		QtGui.QWidget.__init__(self)
@@ -17,6 +20,14 @@ class PlannerTool(QtGui.QMainWindow, Ui_plannerTool):
 		axis.setSize(10,10,10)
 		axis.translate(0,0,0.1)
 		self.pathGraphics.addItem(axis)
+
+		field = mesh.Mesh.from_file('field.stl')
+		data = field.points
+		data = data.reshape(-1, 3, 3)
+		md = opengl.MeshData(vertexes = data)
+
+		fieldModel = opengl.GLMeshItem(meshdata = md, shader='shaded')
+		self.pathGraphics.addItem(fieldModel)
 
 
 
