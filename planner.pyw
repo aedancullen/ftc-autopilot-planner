@@ -7,7 +7,7 @@ from PyQt4 import QtGui, QtCore
 from pyqtgraph import opengl
 from plannerUi import Ui_plannerTool
 
-class PlannerTool(QtGui.QWidget, Ui_plannerTool):
+class PlannerTool(QtGui.QMainWindow, Ui_plannerTool):
 	def __init__(self):
 		QtGui.QWidget.__init__(self)
 		self.setupUi(self)
