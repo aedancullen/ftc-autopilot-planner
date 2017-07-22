@@ -1284,7 +1284,7 @@ QDateEdit::down-arrow:focus
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="3">
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="moveDown">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
        <horstretch>0</horstretch>
@@ -1295,12 +1295,14 @@ QDateEdit::down-arrow:focus
       <string>Move Down</string>
      </property>
      <property name="icon">
-      <iconset theme="go-down"/>
+      <iconset theme="go-down">
+       <normaloff/>
+      </iconset>
      </property>
     </widget>
    </item>
    <item row="0" column="0">
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="addSegment">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
        <horstretch>0</horstretch>
@@ -1317,12 +1319,14 @@ QDateEdit::down-arrow:focus
       <string>Add Segment</string>
      </property>
      <property name="icon">
-      <iconset theme="list-add"/>
+      <iconset theme="list-add">
+       <normaloff/>
+      </iconset>
      </property>
     </widget>
    </item>
    <item row="0" column="2">
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="moveUp">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
        <horstretch>0</horstretch>
@@ -1333,12 +1337,14 @@ QDateEdit::down-arrow:focus
       <string>Move Up</string>
      </property>
      <property name="icon">
-      <iconset theme="go-up"/>
+      <iconset theme="go-up">
+       <normaloff/>
+      </iconset>
      </property>
     </widget>
    </item>
    <item row="0" column="1">
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="removeSegment">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
        <horstretch>0</horstretch>
@@ -1349,12 +1355,14 @@ QDateEdit::down-arrow:focus
       <string>Remove Segment</string>
      </property>
      <property name="icon">
-      <iconset theme="list-remove"/>
+      <iconset theme="list-remove">
+       <normaloff/>
+      </iconset>
      </property>
     </widget>
    </item>
    <item row="0" column="4">
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="loadFromCsv">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
        <horstretch>0</horstretch>
@@ -1365,12 +1373,14 @@ QDateEdit::down-arrow:focus
       <string>Load from CSV</string>
      </property>
      <property name="icon">
-      <iconset theme="document-open"/>
+      <iconset theme="document-open">
+       <normaloff/>
+      </iconset>
      </property>
     </widget>
    </item>
    <item row="0" column="5">
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="saveToCsv">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
        <horstretch>0</horstretch>
@@ -1381,7 +1391,9 @@ QDateEdit::down-arrow:focus
       <string>Save to CSV</string>
      </property>
      <property name="icon">
-      <iconset theme="document-save"/>
+      <iconset theme="document-save">
+       <normaloff/>
+      </iconset>
      </property>
     </widget>
    </item>
