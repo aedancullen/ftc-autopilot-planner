@@ -10,16 +10,16 @@ from plannerUi import Ui_plannerTool
 import numpy
 from stl import mesh
 
-class PlannerTool(QtGui.QMainWindow, Ui_plannerTool):
+class PlannerTool(QtGui.QWidget, Ui_plannerTool):
 	def __init__(self):
 		QtGui.QWidget.__init__(self)
 		self.setupUi(self)
-		grid = opengl.GLGridItem()
-		self.pathGraphics.addItem(grid)
-		axis = opengl.GLAxisItem()
-		axis.setSize(10,10,10)
-		axis.translate(0,0,0.1)
-		self.pathGraphics.addItem(axis)
+		#grid = opengl.GLGridItem()
+		#self.pathGraphics.addItem(grid)
+		#axis = opengl.GLAxisItem()
+		#axis.setSize(10,10,10)
+		#axis.translate(0,0,0.1)
+		#self.pathGraphics.addItem(axis)
 
 		#field = mesh.Mesh.from_file('field.stl')
 		#data = field.points
